@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  padding: 0 1rem;
+}
+
+.content {
+  min-height: calc(100vh - 70px - 64px);
+  padding: 1.5rem 0;
+}
+
+.news-item {
+  background-color:  rgb(180, 178, 178);
+  padding: 10px;
+  margin: 13px;
+  border-radius: 16px;
+  box-shadow: 6px 5px 5px grey;
+  font-size: 20px;
+}
+
+.news-item__order-list {
+  font-size: 25px;
+}
+
+.news-page {
+  background-color:  rgb(197, 194, 194);
+  padding: 10px;
+  margin: 13px;
+  border-radius: 10px;
+  box-shadow: 6px 5px 5px rgb(172, 172, 172);
+  height: auto;
+}
+
+.comment {
+  background-color:  rgb(232, 230, 230);
+  padding: 10px;
+  margin: 13px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.comment, p {
+margin: 4px;
+}
+
+.comment__tree {
+  background-color:  rgb(250, 248, 248);
+  padding: 10px;
+  margin: 13px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.cart {
+  position: fixed;
+  bottom: 4rem;
+  right: 10rem;
+  border-radius: 7px;
+
+  cursor: pointer;
+  z-index: 5;
+  padding: 0.8rem;
+}
+
+@media (min-width: 767px) {
+  .cart {
+    top: 5rem;
+    bottom: unset;
+  }
+}
